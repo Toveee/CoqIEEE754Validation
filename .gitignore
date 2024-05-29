@@ -1,0 +1,10 @@
+/testfloat_results
+/__pycache__
+/testfloat_tests
+*.aux
+*.vo
+*.v
+*.vok
+*.vos
+*.glob
+/regression
