@@ -39,7 +39,7 @@ def _parse_test_vectors(file_path, op, frmt, parse_fun, rm):
 def create_test_vector(nums, expected, op, frmt, rm):
     float_func = globals().get(f"{frmt}") # get the right function
     args = []
-    for n in nums: # NOTE: nums should always be 1 or 2, at best 3 (but probably not)
+    for n in nums: # NOTE: nums should always be 1, 2 or 3
         args.append(float_func("0x" + str(n)))
 
     return test_vector(rm, op, args, expected, frmt)
